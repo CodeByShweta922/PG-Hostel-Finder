@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    background-color: #F5F7FA;
+}
+h1{
+    text-align:center ;
+    font-size: 40px;
+    color:#1E3A5F;
+    margin-top: 40px;
+}
+nav {
+    text-align: center;
+    padding: 20px;
+    margin: 0 15px;
+    background-color:#1E3A5F;
+}
+nav a{
+    font-size: 20px;
+    margin: 0px;
+    color: white;
+}
+.pg-card{
+    border:1px solid FFFFFF;
+    padding: 15px;
+    margin:15px;
+    border-radius:10px;
+    background-color:lavender;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0 ,0 ,0.15);
+}
+.pg-card button{
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pg-container{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+}
+.search-box{
+    text-align: center;
+    padding: 25px;
+    margin:30px auto;
+    background-color:white ;
+    width:auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.search-box input{
+    padding: 10px;
+    margin:5px;
+    border-radius: 5px;
+    width: 220px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.search-box button{
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+nav span{
+    color:white;
+    margin:05px;
+}
+h2{
+    text-align: center;
+    color: #1E3A5F;
+    margin-top: 40px;
+}
+.pg-card h3{
+    color: #1E3A5F;
+    font-size: 22px;
+}
+.pg-card p{
+    color: #555;
+    font-size: 16px;
+}
+.pg-card:hover{
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+button:hover{
+    background-color: pink;
+}
+#resetBtn {
+    background-color: #1E3A5F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resultMessage {
+    text-align: center;
+    margin: 20px 0;
+    color: #1E3A5F;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    .pg-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pg-card {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .search-box input {
+        width: 90%;
+        margin: 8px 0;
+    }
+
+    nav a {
+        margin: 05px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

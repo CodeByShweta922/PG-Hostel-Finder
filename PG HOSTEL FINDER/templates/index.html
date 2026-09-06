@@ -1,0 +1,182 @@
+<html>
+     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>
+         PG HOSTEL FINDER
+        </title>
+        </head>
+        <body>
+            <nav>
+                <a href="#home">Home</a>
+                <span>|</span>
+                <a href="#findpg">Find PG</a>
+                <span>|</span>
+                <a href="#about">About</a>
+                <span>|</span>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="search-box" id="findpg">
+            <label>Location</label>
+            <input type="text" id="locationInput" placeholder="enter your location">
+            <label>Budget</label>
+            <input type="number" id="budgetInput" placeholder="enter your budget" min="1" step="1">
+           <H1 id="home"> Welcome to PG and Hostel Finder</H1>
+           <P>Find the best PG's and hostels according to your 
+            location and budget.Compare different options and 
+            choose a comfortable place to stay.</P>
+            <button id="searchBtn">Search PG's and Hostel</button>
+            <button id="resetBtn">Reset Search</button>
+            </div>
+            <h2>Popular PG's and Hostels</h2>
+            <p id="resultMessage" style="display: none;"></p>
+            <div class="pg-container">
+            <p id="noResults" style="display: none;">No PG found for your search.</p>
+            <div class="pg-card" data-location="shimla" data-rent="8000">
+            <h3>1.Shimla Hills</h3>
+            <p>Location:Shimla</p>
+            <p>Rent:₹8000/month</p>
+            <button class="detailsBtn">View Details</button>
+            <div class="pg-details" style="display: none;">
+    <p>Room: Single and Double Room</p>
+    <p>Facilities: Wi-Fi, Food, Parking</p>
+    <p>Contact: 9876543210</p>
+    <p>Security: 24/7 Security</p>
+    <button class="contactBtn1">Contact Owner</button>
+    <div id="contactPopup1" class="contact-popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup1" class="close-btn">&times;</span>
+
+        <h2>Contact Owner</h2>
+
+        <p id="popupPhone1"></p>
+
+        <button id="callOwnerBtn1">Call Now</button>
+    </div>
+
+</div>
+    </div></div>
+            <div class="pg-card" data-location="manali" data-rent="7000">
+            <h3>2.Mountain View PG</h3>
+            <p>Location:Manali</p>
+            <p>Rent:₹7000/month</p>
+            <p>Security: 24/7 Security</p>
+            <button class="detailsBtn">View Details</button>
+            <div class="pg-details" style="display: none;">
+    <p>Room: Single and Double Room</p>
+    <p>Facilities: Wi-Fi, Food, Parking</p>
+    <p>Contact: 9816543210</p>
+    <p>Security: 24/7 Security</p>
+    <button class="contactBtn2">Contact Owner</button>
+    <div id="contactPopup2" class="contact-popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup2" class="close-btn">&times;</span> 
+
+        <h2>Contact Owner</h2>
+
+        <p id="popupPhone2"></p>
+
+        <button id="callOwnerBtn2">Call Now</button>
+    </div>
+
+</div>
+    </div></div>
+            <div class="pg-card" data-location="dharmshala" data-rent="5500">
+            <h3>3.Green valley Hostel</h3>
+            <p>Location:Dharmshala</p>
+            <p>Rent:₹5500/month</p>
+            <button class="detailsBtn">View Details</button>
+            <div class="pg-details" style="display: none;">
+    <p>Room: Single and Double Room</p>
+    <p>Facilities: Wi-Fi, Food, Parking</p>
+    <p>Contact: 9873243210</p>
+    <p>Security: 24/7 Security</p>
+    <button class="contactBtn3">Contact Owner</button>
+    <div id="contactPopup3" class="contact-popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup3" class="close-btn">&times;</span>
+
+        <h2>Contact Owner</h2>
+
+        <p id="popupPhone3"></p>
+
+        <button id="callOwnerBtn3">Call Now</button>
+    </div>
+
+</div>
+    </div>
+            </div>
+            <div class="pg-card" data-location="chandigarh" data-rent="8000">
+            <h3>4.Chandigarh Green</h3>
+            <p>Location:Chandigarh</p>
+            <p>Rent:₹8000/month</p>
+            <button class="detailsBtn">View Details</button>
+            <div class="pg-details" style="display: none;">
+    <p>Room: Single and Double Room</p>
+    <p>Facilities: Wi-Fi, Food, Parking</p>
+    <p>Contact: 9873443210</p>
+    <p>Security: 24/7 Security</p>
+    <button class="contactBtn4">Contact Owner</button>
+    <div id="contactPopup4" class="contact-popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup4" class="close-btn">&times;</span>
+
+        <h2>Contact Owner</h2>
+
+        <p id="popupPhone4"></p>
+
+        <button id="callOwnerBtn4">Call Now</button>
+    </div>
+
+</div>
+    </div></div>
+            <div class="pg-card" data-location="delhi" data-rent="8000">
+            <h3>5.Delhi ville</h3>
+            <p>Location:Delhi</p>
+            <p>Rent:₹8000/month</p>
+            <button class="detailsBtn">View Details</button>
+            <div class="pg-details" style="display: none;">
+    <p>Room: Single and Double Room</p>
+    <p>Facilities: Wi-Fi, Food, Parking</p>
+    <p>Contact: 9873343210</p>
+    <p>Security: 24/7 Security</p>
+    <button class="contactBtn5">Contact Owner</button>
+    <div id="contactPopup5" class="contact-popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup5" class="close-btn">&times;</span>
+
+        <h2>Contact Owner</h2>
+
+        <p id="popupPhone5"></p>
+
+        <button id="callOwnerBtn5">Call Now</button>
+    </div>
+
+</div>
+    </div></div></div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+           <section id="about">
+    <h2>About Us</h2>
+    <p>
+        PG and Hostel Finder helps students and working people
+        find suitable PGs and hostels according to their location
+        and budget.
+    </p>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: pghostelfinder@gmail.com</p>
+    <p>Phone: 9876543210</p>
+</section>
+        </body>
+</html>
